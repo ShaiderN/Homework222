@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Homework222</string>
+    <string name="settingsMn">Настройки</string>
+    <string name="notesMn">Записная книжка</string>
 </resources>

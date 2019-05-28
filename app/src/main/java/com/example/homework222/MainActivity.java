@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
     }
 
     @Override
@@ -32,11 +35,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
+        startActivity(intentNotes);
+
         return super.onOptionsItemSelected(item);
     }
-
-   /* Пункт 7
-    Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
-    startActivity(intentNotes);
-    */
 }

@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (id == R.id.action_settings) {
-            Toast.makeText(MainActivity.this, "Отркыть настройки", Toast.LENGTH_LONG).show();
-            Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
-            startActivity(intentNotes);
+                Toast.makeText(MainActivity.this, "Отркыть настройки", Toast.LENGTH_LONG).show();
+                Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
+                startActivity(intentNotes);
             return true;
         }
 

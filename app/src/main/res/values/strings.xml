@@ -3,4 +3,6 @@
     <string name="settingsMn">Настройки</string>
     <string name="notesMn">Записная книжка</string>
     <string name="btnSave">Сохранить</string>
+    <string name="bthEdiSet">Изменить настройки</string>
+    <string name="btnSaveSet">Сохранить настройки</string>
 </resources>

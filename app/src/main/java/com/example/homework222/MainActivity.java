@@ -31,12 +31,18 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_open_notes) {
-            Toast.makeText(MainActivity.this, "Отркыть записную книжку", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Отркыть записную книжку", Toast.LENGTH_LONG).show();
+                Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
+                startActivity(intentNotes);
             return true;
         }
 
-        Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
-        startActivity(intentNotes);
+        if (id == R.id.action_settings) {
+            Toast.makeText(MainActivity.this, "Отркыть настройки", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
+            startActivity(intentNotes);
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
